@@ -1,0 +1,162 @@
+/* CHATS DISPLAY */
+
+/* CHAT BOX */
+.chatContainer{
+    padding: 0.5rem;
+    margin: 0;
+    width: 50%;
+   
+}
+
+.selectedChat{
+    background-image: URL("imgs/chatContainer.webp");
+    background-color: #0C1A27;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.selectedChatHeading .navbar{
+    background-color: #12273B;
+    border-radius: 5px 5px 0 0;
+}
+.selectedChatHeading a.navbar-brand,
+.selectedChatHeading a.navbar-brand .bi{
+    font-size: 1.8rem;
+    color: #B3B3B3;
+}
+.selectedChatHeading img.userIcon{
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+}
+
+.selectedChatHeading a.navbar-brand:hover,
+.selectedChatHeading a.navbar-brand .bi:hover{
+    color: #CCCCCC;
+}
+.selectedChatHeading ul li a.dropdown-toggle,
+.selectedChatBody ul li a.dropdown-toggle{
+    color: transparent;
+}
+.selectedChatHeading ul li a.dropdown-toggle .bi,
+.selectedChatBody ul li a.dropdown-toggle .bi{
+    color: #CCCCCC;
+    font-size: 1.5rem;
+}
+
+/* CHAT/TEXT MENU DROP-DOWN */
+.selectedChatHeading .chatMenu,
+.selectedChatBody .textMenu{
+    background-color: #0C1A27;
+    margin: 0;
+    padding: 0.4rem;
+    width: auto;
+}
+.selectedChatHeading ul.chatMenu li,
+.selectedChatBody ul.textMenu li{
+    padding: 0.1rem;
+}
+.selectedChatHeading ul.chatMenu a,
+.selectedChatBody ul.textMenu a{
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.selectedChatHeading ul.chatMenu a:hover,
+.selectedChatBody ul.textMenu a:hover{
+    background-color: #1E4162;
+    transition: 0.2s;
+}
+
+/* CHAT BODY */
+.selectedChatBody{
+    height: 88vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 5rem;
+}
+.selectedChatBody .textReceived,
+.selectedChatBody .textSent{
+    width: 80%;
+}
+.selectedChatBody .textReceived{
+    background-color: #336699;
+    color: #E6E6E6;
+    padding: 0.2rem;
+}
+.selectedChatBody .reply{
+    background-color: #0C1A27;
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.selectedChatBody .textSent{
+    background-color: #00334D;
+    color: #E6E6E6;
+    padding: 0.2rem;
+}
+.selectedChatBody .textReceived:hover,
+.selectedChatBody .textSent:hover{
+    background-color: #1E4162;
+}
+
+
+@media only screen and (max-width: 1060px){
+    .chatContainer{
+        width: 57%;
+    }
+    .selectedChatBody{
+        height: 88vh;
+        padding-bottom: 5rem;
+    }
+    .subMenuHeading .dropdown-menu{
+        width: 25rem;
+    }
+    .subMenuHeading a.navbar-brand,
+    .subMenuHeading ul li a.dropdown-toggle .bi{
+        font-size: 1.7rem;
+    }
+}
+@media only screen and (max-width: 980px){
+    .chatContainer{
+        width: 62%;
+    }
+    .selectedChatBody{
+        height: 78.5vh;
+        padding-bottom: 5rem;
+    }
+    .subMenuHeading .dropdown-menu{
+        width: 20rem;
+    }
+    .subMenuHeading a.navbar-brand,
+    .subMenuHeading ul li a.dropdown-toggle .bi{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 770px){
+    .chatContainer{
+        width: 62%;
+    }
+    .selectedChatBody{
+        height: 83vh;
+        padding-bottom: 5rem;
+    }
+    .subMenuHeading .dropdown-menu{
+        width: 25rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .chatContainer{
+        width: 100%;
+    }
+    .selectedChatBody{
+        height: 80vh;
+        padding-bottom: 5rem;
+    }
+    .subMenuBody{
+        height: 78vh;
+    }
+}
+

@@ -15,6 +15,12 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<script type="text/javascript" src="jsFiles/bootstrap/bootstrap5.js"></script>
 
+	<!-- SYSTEM CSS FILES -->
+	<link rel="stylesheet"type="text/css" href="cssFiles/index.css">
+	<link rel="stylesheet" type="text/css" href="cssFiles/menuBar.css">
+	<link rel="stylesheet" type="text/css" href="cssFiles/subMenu.css">
+	<link rel="stylesheet" type="text/css" href="cssFiles/chatContainer.css">
+
 	<style type="text/css">
 		.layout{
 			height: 100vh;
@@ -38,7 +44,7 @@
 					    </li>
 					</ul>
 
-					<ul class="nav menuBar flex-column mt-5">
+					<ul class="nav menuBody flex-column mt-5">
 						<li class="nav-item" title="Chats">
 							<a class="nav-link postion-relative" href="chats.php">
 								<i class="menuIcon bi bi-chat"></i>
@@ -93,8 +99,9 @@
 								<!-- NEW CHAT BUTTON -->
 								<ul class="navbar-nav newChat d-flex ms-auto mb-3 mb-lg-0 z-3 position-absolute end-0 top-0" title="New Chat">
 									<li class="nav-item dropstart">
-										<a class="nav-link dropdown-toggle float-end px-3" role="button" data-bs-toggle="dropdown" data-bs-display="static" arial-expanded="false" href="#"></a>
-										<i class="bi bi-pencil-square"></i>
+										<a class="nav-link dropdown-toggle float-end px-3" role="button" data-bs-toggle="dropdown" data-bs-display="static" arial-expanded="false" href="#">
+											<i class="bi bi-pencil-square"></i>
+										</a>
 									</li>
 
 									<!-- NEW CHAT DROP-DOWN MENU -->
@@ -108,7 +115,7 @@
 													<div class="card">
 														<div class="row card-body">
 															<div class="listIcon col-sm-2">
-																<i class="bi bi-person-circle"></i>
+																<i class="bi bi-person-circle fs-1"></i>
 															</div>
 															<div class="listBody col-sm-10">
 																<h6 class="card-title">
@@ -232,16 +239,19 @@
 												</a>
 												<ul class="dropdown-menu textMenu">
 													<li>
-														<a class="dropdown-item link-secondary replyToThis" href="#"></a>
-														<i class="bi bi-reply"></i> Reply
+														<a class="dropdown-item link-secondary replyToThis" href="#">
+															<i class="bi bi-reply"></i> Reply
+														</a>
 													</li>
 													<li>
-														<a class="dropdown-item link-secondary editThis" href="#"></a>
-														<i class="bi bi-pencil"></i> Edit
+														<a class="dropdown-item link-secondary editThis" href="#">
+															<i class="bi bi-pencil"></i> Edit
+														</a>
 													</li>
 													<li>
-														<a class="dropdown-item link-secondary deleteThis" href="#"></a>
-														<i class="bi bi-trash"></i> Delete
+														<a class="dropdown-item link-secondary deleteThis" href="#">
+															<i class="bi bi-trash"></i> Delete
+														</a>
 													</li>
 												</ul>
 											</li>
@@ -271,16 +281,19 @@
 												</a>
 												<ul class="dropdown-menu textMenu">
 													<li>
-														<a class="dropdown-item link-secondary replyToThis" href="#"></a>
-														<i class="bi bi-reply"></i> Reply
+														<a class="dropdown-item link-secondary replyToThis" href="#">
+															<i class="bi bi-reply"></i> Reply
+														</a>
 													</li>
 													<li>
-														<a class="dropdown-item link-secondary editThis" href="#"></a>
-														<i class="bi bi-pencil"></i> Edit
+														<a class="dropdown-item link-secondary editThis" href="#">
+															<i class="bi bi-pencil"></i> Edit
+														</a>
 													</li>
 													<li>
-														<a class="dropdown-item link-secondary deleteThis" href="#"></a>
-														<i class="bi bi-trash"></i> Delete
+														<a class="dropdown-item link-secondary deleteThis" href="#">
+															<i class="bi bi-trash"></i> Delete
+														</a>
 													</li>
 												</ul>
 											</li>
@@ -301,7 +314,7 @@
 								</div>
 
 								<!-- RECEIVED TEXT -->
-								<div class="card textSent mt-2 mb-2 ms-auto">
+								<div class="card textReceived mt-2 mb-2 ms-auto">
 									<div class="row card-body">
 										<!-- REPLY -->
 										<div class="reply mb-3" style="margin-top: -0.8rem;">
@@ -317,8 +330,9 @@
 												</a>
 												<ul class="dropdown-menu textMenu">
 													<li>
-														<a class="dropdown-item link-secondary replyToThis" href="#"></a>
-														<i class="bi bi-reply"></i> Reply
+														<a class="dropdown-item link-secondary replyToThis" href="#">
+															<i class="bi bi-reply"></i> Reply
+														</a>
 													</li>
 												</ul>
 											</li>
@@ -335,7 +349,7 @@
 										</span>
 									</div>
 								</div>
-								<div class="card textSent mt-2 mb-2 ms-auto">
+								<div class="card textReceived mt-2 mb-2 ms-auto">
 									<div class="row card-body">
 										<!-- REPLY -->
 										<div class="reply mb-3" style="margin-top: -0.8rem;">
@@ -351,8 +365,9 @@
 												</a>
 												<ul class="dropdown-menu textMenu">
 													<li>
-														<a class="dropdown-item link-secondary replyToThis" href="#"></a>
-														<i class="bi bi-reply"></i> Reply
+														<a class="dropdown-item link-secondary replyToThis" href="#">
+															<i class="bi bi-reply"></i> Reply
+														</a>
 													</li>
 												</ul>
 											</li>

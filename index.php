@@ -15,6 +15,10 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<script type="text/javascript" src="jsFiles/bootstrap/bootstrap5.js"></script>
 
+	<!-- SYSTEM CSS FILES -->
+	<link rel="stylesheet" type="text/css" href="cssFiles/index.css">
+	<link rel="stylesheet" type="text/css" href="cssFiles/menuBar.css">
+
 	<style type="text/css">
 		.layout{
 			height: 100vh;
@@ -35,9 +39,17 @@
 					<div class="systemMessages position-absolute start-50 bottom-100 translate-middle text-center w-100">
 						<?php
 
-							echo "This is an error message Sample";
+							// echo "This is an error message Sample";
 
 						?>
+						<div class='alert alert-success alert-dismissible fade show' role='alert'>
+							This is a success Message Sample.
+							<button class="btn-close" data-bs-dismiss='alert'></button>
+						</div>
+						<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+							This is a danger Message Sample.
+							<button class="btn-close" data-bs-dismiss='alert'></button>
+						</div>
 					</div>
 					<div class="welcomeMessage text-center mb-5">
 						<h3 class="messageHeading">
