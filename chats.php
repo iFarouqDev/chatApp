@@ -1,34 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-	<!-- FAVICON -->
-	<link rel="icon" type="image/x-icon" href="imgs/favicon/chat-dots.svg">
-
-	<!-- jQUERY FILE -->
-	<script type="text/javascript" src="jsFiles/jQuery/jQuery3.7.1.js"></script>
-
-	<!-- BOOTSTRAP FILES -->
-	<link rel="stylesheet" type="text/css" href="cssFiles/bootstrap/bootstrap5.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-	<script type="text/javascript" src="jsFiles/bootstrap/bootstrap5.js"></script>
-
-	<!-- SYSTEM CSS FILES -->
-	<link rel="stylesheet"type="text/css" href="cssFiles/index.css">
-	<link rel="stylesheet" type="text/css" href="cssFiles/menuBar.css">
-	<link rel="stylesheet" type="text/css" href="cssFiles/subMenu.css">
-	<link rel="stylesheet" type="text/css" href="cssFiles/chatContainer.css">
-
-	<style type="text/css">
-		.layout{
-			height: 100vh;
-			overflow: auto;
-		}
-	</style>
-
-</head>
+<?php
+	include "incs/preAuthHeader.php";
+?>
 <body>
 	<main>
 		<div class="container-fluid">
@@ -37,57 +9,9 @@
 			<div class="row layout">
 				
 				<!-- MENUBAR/MENU LIST -->
-				<div class="menuBar position-relative">
-					<ul class="nav flex-column position-absolute start-0 top-0">
-					    <li class="nav-item">
-					    	<a class="nav-link brand" aria-current="page" href="#">chatApp</a>
-					    </li>
-					</ul>
-
-					<ul class="nav menuBody flex-column mt-5">
-						<li class="nav-item" title="Chats">
-							<a class="nav-link postion-relative" href="chats.php">
-								<i class="menuIcon bi bi-chat"></i>
-								<span class="menuText">Chats</span>
-								<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="menuChatCount">
-									999
-									<span class="visually-hidden">Unread messages count</span>
-								</span>
-							</a>
-						</li>
-						<li class="nav-item" title="Friends">
-							<a class="nav-link postion-relative" href="#">
-								<i class="menuIcon bi bi-people"></i>
-								<span class="menuText">Friends</span>
-							</a>
-						</li>
-						<li class="nav-item" title="Friend Requests">
-							<a class="nav-link postion-relative" href="#">
-								<i class="menuIcon bi bi-person-exclamation"></i>
-								<span class="menuText">Friend Requests</span>
-								<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="menuChatCount">
-									999
-									<span class="visually-hidden">Friend requests count</span>
-								</span>
-							</a>
-						</li>
-						<li class="nav-item" title="Search">
-							<a class="nav-link postion-relative" href="#">
-								<i class="menuIcon bi bi-people"></i>
-								<span class="menuText">Seach</span>
-							</a>
-						</li>
-					</ul>
-					<!-- USER PROFILE BUTTON -->
-					<ul class="nav menuFooter flex-column position-absolute start-0 bottom-0 mx-2 w-100">
-						<li class="nav-item" title=Profile>
-							<a class="nav-link" href="#">
-								<i class="bi bi-person"></i> 
-								<span class="menuText">Profile</span>
-							</a>
-						</li>
-					</ul>
-				</div>
+				<?php
+					include "incs/menuBar.php";
+				?>
 
 				<!-- SELECTED MENU DISPLAY -->
 				<div class="subMenu">
@@ -178,11 +102,11 @@
 				<!-- SELECTED BODY DISPLAY -->
 				<div class="chatContainer position-relative">
 					<div class="chatBodyAlt position-absolute start-50 top-50 translate-middle text-center">
-						<i class="bi bi-chat-dots bannerIcon"></i>
+						<i class="bi bi-chat-dots bannerIcon fs-1"></i>
 						<h3 class="bannerText">chatApp</h3>
 						<p class="encMessage"><i class="bi bi-lock"></i> personal messages are end-to-end encrypted</p>
 					</div>
-					<div class="selectedChat">
+					<div class="selectedChat d-none">
 						<!-- CHAT HEADING -->
 						<div class="selectedChatHeading position-relative">
 							<nav class="navbar navbar-expand-lg">
@@ -392,8 +316,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</main>
-</body>
-</html>
-<script type="text/javascript" src="jsFiles/formValidator.js"></script>
+
+<?php
+	include "incs/footer.php";
+?>
