@@ -16,12 +16,17 @@ main{
 .welcomeMessage .bi{
     font-size: 1.8rem;
 }
-.layout{
+.layout,
+.compressedLayout{
     height: 100vh;
     overflow: auto;
     padding: 0.5rem;
     border: 1px solid #808080;
     border-radius: 5px;
+}
+.compressedLayout{
+    height: 90vh;
+    display: none;
 }
 
 
