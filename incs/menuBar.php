@@ -17,13 +17,13 @@
 			</a>
 		</li>
 		<li class="nav-item" title="Friends">
-			<a class="nav-link" href="#">
+			<a class="nav-link" href="friends.php">
 				<i class="menuIcon bi bi-people"></i>
 				<span class="menuText">Friends</span>
 			</a>
 		</li>
 		<li class="nav-item" title="Friend Requests">
-			<a class="nav-link position-relative" href="#">
+			<a class="nav-link position-relative" href="friendRequests.php">
 				<i class="menuIcon bi bi-person-exclamation"></i>
 				<span class="menuText">Friend Requests</span>
 				<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="menuChatCount">
@@ -33,7 +33,7 @@
 			</a>
 		</li>
 		<li class="nav-item" title="Search">
-			<a class="nav-link" href="#">
+			<a class="nav-link" href="search.php">
 				<i class="menuIcon bi bi-search"></i>
 				<span class="menuText">Seach</span>
 			</a>
@@ -42,7 +42,7 @@
 	<!-- USER PROFILE BUTTON -->
 	<ul class="nav menuFooter flex-column position-absolute start-0 bottom-0 mx-2 w-100">
 		<li class="nav-item" title=Profile>
-			<a class="nav-link" href="#">
+			<a class="nav-link" href="profile.php">
 				<i class="bi bi-person"></i> 
 				<span class="menuText">Profile</span>
 			</a>

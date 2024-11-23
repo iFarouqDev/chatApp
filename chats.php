@@ -13,6 +13,7 @@
 					include "incs/menuBar.php";
 				?>
 
+				<title>Chats | User's Username</title>
 				<!-- SELECTED MENU DISPLAY -->
 				<div class="subMenu">
 					<div class="subMenuHeading position-relative">
@@ -318,7 +319,7 @@
 
 				<div class="compressedLayout">
 					<!-- SELECTED MENU DISPLAY -->
-					<div class="comressedSubMenu">
+					<div class="comressedSubMenu d-none">
 						<div class="subMenuHeading position-relative">
 							<nav class="navbar navbar-expand-lg">
 								<div class="container-fluid">

@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="cssFiles/menuBar.css">
 	<link rel="stylesheet" type="text/css" href="cssFiles/subMenu.css">
 	<link rel="stylesheet" type="text/css" href="cssFiles/chatContainer.css">
+	<link rel="stylesheet" type="text/css" href="cssFiles/friends.css">
 
 	<style type="text/css">
 		.layout{

@@ -1,0 +1,145 @@
+.subMenuHeading ul li .bi{
+    font-size: 2rem;
+    color: #B3B3B3;
+}
+.nonChatContainer{
+    padding: 0.5rem;
+    margin: 0;
+    width: 50%;
+    background-color: #0C1A27;
+}
+.profileBody{
+    margin-top: 5rem;
+}
+.profileBody .profileIcon{
+    text-align: center;
+}
+.profileIcon img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 1px solid #808080;
+}
+.profileIcon .bi{
+    font-size: 7rem;
+}
+.profileBody .card{
+    background-color: #18344E;
+    color: #D9D9D9;
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+}
+.dropdown button{
+    float: left;
+    margin-right: 1rem;
+    margin-left: 4rem;
+}
+
+/* PROFILE MENU DROP-DOWN */
+.profileButtons .dropdown-menu{
+    background-color: #0C1A27;
+    margin: 0;
+    padding: 0.4rem;
+    width: auto;
+}
+.profileButtons .dropdown-menu li{
+    padding: 0.1rem;
+}
+.profileButtons .dropdown-menu a{
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.profileButtons .dropdown-menu a:hover{
+    background-color: #1E4162;
+    transition: 0.2s;
+}
+
+/* PROFILE BODY */
+.profileBody .card-body{
+    width: 100%;
+}
+.profileBody .card-body .profileDetails * p{
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1300px){
+    .dropdown button{
+        margin-right: 1rem;
+        margin-left: 2rem;
+    }
+}
+@media only screen and (max-width: 1235px){
+    .dropdown button{
+        margin-right: 0.2rem;
+        margin-left: 0.2rem;
+    }
+}
+@media only screen and (max-width: 1060px){
+    .nonChatContainer{
+        width: 57%
+    }
+}
+@media only screen and (max-width: 980px){
+    .nonChatContainer{
+        width: 62%;
+    }
+    .dropdown button{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 770px){
+    .nonChatContainer{
+        width: 62%;
+    }
+}
+@media only screen and (max-height: 600px){
+    .layout{
+        height: 100vh;
+    }
+    .profileBody{
+        height: 78vh;
+        padding-bottom: 0.5rem;
+        margin-top: 0rem;
+    }
+      .profileBody .card-body{
+        margin-top: -1rem;
+    }
+    .profileBody .profileDetails{
+        margin-bottom: -3rem;
+        margin-top:
+    }
+}
+
+/* COMPRESSED LAYOUT */
+@media only screen and (max-width: 580px){
+    .nonChatContainer{
+        display: none;
+        width: 100%;
+    }
+    .compressedLayout .compressedNonChatContainer{
+        width: 100%;
+    }
+    .compressedLayout .profileBody .card{
+        width: 90%;
+        padding: 1rem;
+        margin: auto;
+    }
+    .profileButtons{
+        margin-top: -5rem;
+    }
+    .profileAddress{
+        margin-top: -10rem;
+    }
+    .profileAddress .card-text{
+        line-height: 0;
+        margin-top: -2.5rem;
+    }
+}
+/* COMPRESSED LAYOUT */
+@media only screen and (max-width: 400px){
+    .compressedNonChatContainer{
+        width: 100%;
+        display: flex;
+    }
+}
